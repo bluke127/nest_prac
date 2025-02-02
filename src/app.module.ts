@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 
 @Module({
   imports: [],
+  //nest의 router 개념
   controllers: [AppController],
   providers: [AppService],
 })
