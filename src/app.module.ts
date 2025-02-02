@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { MoviesController } from './movies/movies.controller';
 
 @Module({
   imports: [],
   //nest의 router 개념
-  controllers: [AppController],
-  providers: [AppService],
+  //nest g co라고 하면 controller가 생성
+  controllers: [MoviesController],
+  providers: [],
 })
 export class AppModule {}
